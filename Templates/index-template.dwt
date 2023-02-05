@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		
+		<!-- TemplateBeginEditable name="doctitle" -->
+		<title>Seitentitel</title>
+		<!-- TemplateEndEditable -->
+		
+		<link rel="stylesheet" href="../css/standart.css">
+		<link rel="stylesheet" href="../css/lightbox.css" type="text/css"> 	 			
+		<script src="../js/jquery-3.3.1.min.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex">
+		
+		<!-- TemplateBeginEditable name="head" -->
+		
+		<!-- TemplateEndEditable -->
+		
+	</head>
+
+	<body>
+	<div id="wrapper">
+			
+		<div class="header">
+			
+			<!-- TemplateBeginEditable name="Seitentitel" -->
+			<h1>Seitentitel</h1>
+			<!-- TemplateEndEditable -->
+		 
+			<figure class="bildunterschrift"> 
+			<div class="background"></div>
+			
+			<!-- TemplateBeginEditable name="Name Hintergrundbild" -->
+			<figcaption>Hintergrundbild</figcaption></figure>
+			<!-- TemplateEndEditable -->
+		
+		</div>
+				
+		<a href="#" id="scrollToBottom">&#10095;&#10095;</a>
+		<a href="#" id="scrollToTop" >&#10094;&#10094;</a>
+
+
+		<div class="row">
+			
+			<div class="leftcolumn">
+				
+				<!-- TemplateBeginEditable name="Beiträge" -->			
+
+<!--  ------------------------------ KOPIERVORLAGE ------------------------------  -->
+<!--			
+					<div class="card">	
+
+						<h2>Artikelheadline</h2>
+						<h5>Autor // XX. Monat 2018</h5>		
+
+						<figure class="bildunterschrift"> 
+
+						<a href="../2018-05-00/artikel.html"> <img src="../2018-05-00/artikelbild.jpg" alt="titel"> </a>							
+						<figcaption>titel</figcaption></figure>	
+
+						<p>
+							Blindtext, Blindtext, Blindtext.
+
+							<a href="../2018-05-00/artikel.html" title="titel">|&nbsp;weiterlesen </a>
+						</p>						
+
+					</div>	
+		-->
+
+<!--  ------------------------------ DATUM BEITRAG 1 ------------------------------  -->
+
+				<div class="card">	
+
+					<h2>Artikelheadline</h2>
+					<h5>Autor // XX. Monat 2018</h5>		
+
+					<figure class="bildunterschrift"> 
+
+					<a href="../2018-05-00/artikel.html"> <img src="../2018-05-00/artikelbild.jpg" alt="Bildname"> </a>							
+					<figcaption>Bildname</figcaption></figure>	
+
+					<p>
+						Blindtext, Blindtext, Blindtext.
+
+						<a href="../2018-05-00/artikel.html" title="Artikelname">|&nbsp;weiterlesen </a>
+					</p>						
+
+				</div>
+
+				<!-- TemplateEndEditable -->
+				
+			</div>
+
+	<div class="rightcolumn">
+		
+		<!-- TemplateBeginEditable name="Sidebar" -->		
+		
+<!--  ------------------------------- WIR SINDS  -------------------------------  -->	
+		
+		<div class="card">			
+    	<h2>Wir sinds</h2>
+    	<h5>Christina & Phil</h5>
+    	<img src="../images/wir-sinds/wir-sinds.jpg" alt="Christina & Phil">
+    	<p>
+				Der Blog ist nicht für die Öffentlichkeit gedacht. Gebt daher die Adresse bitte nicht weiter. 
+			<br><br>
+				Danke Euch und phil Spaß beim Lesen!
+			</p>
+		</div>
+	
+<!--  ---------------------------------- HINWEIS ---------------------------------  -->
+    
+		<div class="card">
+			<h2>Hinweis</h2>
+			<p>
+				Leider mag mein Ad-Blocker &raquo;uBlock Origin&laquo; den Scroll-Up-Button nicht. Weiß leider nicht, wie das zu lösen ist ... 
+			<br>	
+				Wenn ihr am oberen Rand nur einen Scroll-Button seht, müsstet ihr bitte für diese Seite euren Blocker deaktivieren oder manuell scrollen 
+				&mdash; aber hier gibt's ja keine Werbung <span class="smiley">&#x263A;</span>
+			</p>
+		</div>
+		
+<!--  ---------------------------------- VERLAUF ---------------------------------  -->
+  
+		<div class="card">
+			<h2>Verlauf</h2>
+			<a href="../2018-05-00/artikel.html" title="2018-05-00">|&nbsp;2018-05-00</a> <br>
+		</div>
+		
+<!--  ---------------------------------- KONTAKT ---------------------------------  
+    
+		<div class="card">
+			<h2>Kontakt</h2>
+			<a href="mailto:cup@friderici.net?Subject=Post%20für%20euch" target="_top">|&nbsp;cup@friderici.net</a>
+		</div>-->
+		
+		<!-- TemplateEndEditable -->
+
+		</div>
+					
+		</div>
+
+	<div class="footer">
+		<h2>Und zu guter Letzt </h2>
+		<a href="../impressum.html" title="Impressum">|&nbsp;Impressum |</a>
+	</div> 
+	
+	</div>
+	<script src="../js/lightbox.js"></script> 
+		
+<!--	smooth scroll to top and bottom	-->
+<script> 		
+	$(document).ready(function(){
+		
+	$('#scrollToTop').click(function()
+		{ $('html, body').animate({scrollTop : 0},2400);
+			return false; });
+
+	$('#scrollToBottom').click(function()
+		{ $('html, body').animate({scrollTop : 50000},4800);
+			return false; } ) ; } ) ;
+</script>
+		
+<!--	einblenden der Buttons nach 100px scrollen	-->
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	function myFunction()
+	{ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+		{ 	document.getElementById("scrollToTop").className = "sichtbar";
+		    document.getElementById("scrollToBottom").className = "sichtbar";  } 
+		else 
+		{   document.getElementById("scrollToTop").className = "";
+		    document.getElementById("scrollToBottom").className = "";  }		}
+</script>
+		
+						
+	</body>
+</html>

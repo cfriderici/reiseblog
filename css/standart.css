@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* -------------- Google Fonts -------------- */
+
+@font-face
+{ font-family: 'TitilliumWeb-ExtraLight';
+	src: url(../fonts/TitilliumWeb-ExtraLight.ttf) format('truetype'); }
+@font-face
+{ font-family: 'TitilliumWeb-Light';
+	src: url(../fonts/TitilliumWeb-Light.ttf) format('truetype'); }
+@font-face
+{ font-family: 'TitilliumWeb-Regular';
+	src: url(../fonts/TitilliumWeb-Regular.ttf) format('truetype'); }
+
+
+
+/* -------------- Body und Wrapper -------------- */
+
+*	{ box-sizing: border-box; }
+
+body
+{ background-color: #f1f1f1;
+	font-family: TitilliumWeb-Light, sans-serif;
+	font-weight:300;
+	font-size: 100%;
+	line-height: 150%;
+	letter-spacing: 0.025em ; 
+  padding: 1.5em;
+	margin: 0; } 
+
+#wrapper
+{ max-width:900px;
+	margin:auto;
+	padding:0; }
+
+
+
+/* -------------- Typo Formate -------------- */
+
+.versalien
+{ text-transform: uppercase; }
+
+.minuskel
+{ text-transform: none; }
+
+
+h1 /*Seitentitel*/
+{ /*background-color: rgba(58,158,213,0.25);*/
+	font-family: TitilliumWeb-ExtraLight, sans-serif;
+	font-weight:200;
+	text-transform: uppercase;
+	letter-spacing: 0.045em ;
+	font-size: 3rem ; 
+	line-height: 0.9em ;
+	margin: 0 0 0 -0.1em ;
+	padding: 0.3em 0em 0.3em 0; }
+
+
+h2 /*Footerheadline*/
+{ font-family: TitilliumWeb-Light, sans-serif;
+	font-weight:300;
+	text-transform: uppercase;
+	letter-spacing: 0.035em;
+	font-size: 1.75rem ; 
+	line-height: 1em ;
+	margin: 0 0 0.25em -0.05em ; }
+
+h3 /*Beitragseadline*/
+{ font-family: TitilliumWeb-Light, sans-serif;
+	font-weight:300;
+	text-transform: uppercase;
+	letter-spacing: 0.035em ;
+	font-size: 1.75rem ; 
+	line-height: 1em ;
+	margin: 1em 0em 0.25em 0em ; }
+
+h4 /*Beitrags-Subheadline*/
+{ font-family: TitilliumWeb-Regular, sans-serif;
+	font-weight:400;
+	color: #E78E2A;
+	font-size: 1.4rem ; 
+	line-height: 1.25em ;
+	margin: 0 0 0.25em 0; }
+
+h5 /*Autor*/
+{ font-family: TitilliumWeb-Light, sans-serif;
+	font-weight:400;
+	text-transform: uppercase;
+	letter-spacing: 0.035em;   
+	font-size: 0.75rem ;
+	line-height: 1em ;
+	margin: 0 0 1em 0;
+	color: #4E4E4E; }
+
+p /*Beitragabsatz*/
+{ font-size: 1.1rem ;
+	line-height: 1.5em ;
+	-moz-hyphens: auto;
+	-o-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	margin: 1em 0 1em 0; }
+
+.infotext
+{ font-size: 0.9rem;
+	line-height: 1em; }
+
+a
+{ font-family: TitilliumWeb-Regular, sans-serif;
+	font-weight:400;
+/*	font-size: 1.1rem ;
+	line-height: 1.5em ;*/
+	text-decoration: none !important; 
+	-moz-hyphens: none;
+  -o-hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; 
+	color: #E78E2A; }
+
+a:link
+{ text-decoration: none !important; 
+	color: #E78E2A; }
+
+a:active
+{	text-decoration: none !important; 
+	color: #E78E2A;}
+
+a:visited
+{ text-decoration: none !important;
+	color: #E78E2A;} 
+
+a:hover
+{ text-decoration: none !important;
+	color: #000000;} 
+
+
+.smiley
+{ font-size: 1.4rem;
+	line-height: 100%; }
+
+.pfeil
+{	font-size: 1.25rem;
+	vertical-align: 15%; }
+
+
+/* -------------- Columns -------------- */
+ 
+.leftcolumn
+	{ float: left;
+  	width: 70%;
+		position: relative; }
+
+.rightcolumn 
+{	float: left;
+  width: 30%;
+  padding-left: 1.5em ; }
+
+.one-column 
+{	/*float: left;*/
+  width: 100%;
+	margin-top: 0 ;
+	padding: 0 ; }
+
+
+
+/* --------------  Card  -------------- */
+
+.card
+	{ background-color: #FFFFFF;
+  	padding: 1.25em;
+  	margin-bottom: 1.5em; }
+
+
+
+/* -------------- Header -------------- */
+
+.header 
+	{ text-align: center;
+	  background: #FFFFFF;
+		padding: 0 0 4.5em 0;
+		margin-bottom: 1.5em; }
+
+
+
+/* --------------  Navigation  -------------- */
+
+.navigation
+	{	text-align: center; 
+		margin: 2em 0 0 0; }
+
+.zurück
+	{ float: left; }
+
+.zurück-inaktiv
+	{ color: #7C7C7C;
+		float: left; }
+
+.start a
+	{	font-size: 1.6rem;
+		text-align: center; }
+
+.vor
+	{ float: right; }
+
+.vor-inaktiv
+	{ color: #7C7C7C;
+		float: right; }
+
+
+
+/* --------------  Nach oben Button  -------------- */
+
+#scrollToTop
+{	position:fixed;
+	top: 0;
+	left: 50%;
+	margin-left: 0.25em; }
+
+#scrollToBottom
+{ position:fixed;
+	top: 0;
+	right: 50%;	
+	margin-right: 0.25em; }
+
+#scrollToTop, #scrollToBottom
+{ display:none;
+	z-index: 100;
+	width: 2.5em;
+	height: 2.5em;
+	padding: 0.5em;
+	transform: rotate(90deg);
+	box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+	background-color: #FFFFFF;
+	font-weight: bold;
+	text-align:center; }
+
+.sichtbar
+{ display: block !important; }
+
+
+
+/* -------------- Bildunterschriften -------------- */
+
+figure, figcaption
+{ margin: 0;
+	padding: 0; }
+
+figure.bildunterschrift
+{ overflow: hidden;
+	position: relative;
+	display: inline-block;
+	width: 100%; }
+
+figure img
+{	width: 100%;
+	display: block; }
+
+figcaption 
+{ visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 3em ;
+	color: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0); }
+
+figcaption 
+{	position: absolute;
+	bottom: -3em;
+	text-align: center;
+	line-height: 3em ;
+	white-space: nowrap;
+	color: white;
+	background: rgba(0, 0, 0, 0);
+	-webkit-transition: all ease 1s;
+	transition: all ease 1s; 
+	margin: 0px;
+	padding: 0px;}
+
+figure:hover figcaption
+{ position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: visible;
+	-webkit-transition: all ease 1s;
+	transition: all ease 1s; 
+	background: rgba(0, 0, 0, 0.5);
+	color: white; }
+
+figure:hover:before
+{ background: rgba(255, 255, 255, 0);
+	color: rgba(0, 0, 0, 0); }
+
+
+
+/* -------------- Bilder -------------- */
+
+.background	
+{ background-image: url(../images/backgroung/background.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-position: left;
+	height: 15em; }
+
+.row img 
+{ width: 100%;
+	height: auto;	}
+
+.beitrag-bild
+{ background-color: #f1f1f1; }
+
+.header img
+	{ width: 100%; }
+
+
+
+/* -------------- Bildergalerie -------------- */
+
+#photos 
+{ line-height: 0;
+	background-color: #000000;
+	border: 0.1em solid #000000;
+	border-radius: 0;
+	-webkit-column-count: 3;
+	-webkit-column-gap:   0px;
+	-moz-column-count:    3;
+	-moz-column-gap:      0px;
+	column-count:         3;
+	column-gap:           0px; 
+	margin: 0 0 1em 0; }
+
+#photos img
+{ width: 100% !important;
+	height: auto !important;
+	border: 0.1em solid #000000;
+	border-radius: 0;  }
+
+
+@media screen and (max-width: 1000px) 
+{ #photos
+	{ -moz-column-count:    3;
+  	-webkit-column-count: 3;
+ 		 column-count:        3; } }
+
+@media screen and (max-width: 800px)
+{ #photos 
+	{ -moz-column-count:    2;
+  	-webkit-column-count: 2;
+  	column-count:         2; } }
+
+@media screen and (max-width: 400px) 
+{ #photos 
+	{ -moz-column-count:    1;
+ 		-webkit-column-count: 1;
+  	column-count:         1; } }
+
+
+
+/* --------------  Clear floats after the columns  und bei Galerie und to-top-button -------------- */
+
+/*.row
+{float: left; }*/
+
+.row:after 
+	{ content: "";
+  	display: table;
+  	clear: both; }
+
+
+/* --------------  Footer  -------------- */
+
+.footer 
+	{ background: #ddd;
+		text-align: center;
+  	margin: 0;
+		padding: 1.5em 0 1em 0; 
+		clear: both; }
+
+
+
+/* --------------  Responsive Layout  -------------- */
+
+@media screen and (min-width: 600px) and (max-width: 950px) and (orientation: portrait)
+{ .leftcolumn, .rightcolumn 
+		{ width: 100%;
+    	padding: 0; } }
+
+@media screen and (min-width: 600px) and (max-width: 800px) and (orientation: portrait)
+{ .leftcolumn, .rightcolumn 
+		{ width: 100%;
+    	padding: 0; } }
+
+@media screen and (min-width: 300px) and (max-width: 600px) 
+{ .leftcolumn, .rightcolumn 
+		{ width: 100%;
+    	padding: 0;	}
+	body
+		{ padding: 0.75em 0 0 0; }
+	h1
+		{ font-family: TitilliumWeb-Light, sans-serif;
+			font-weight:300;
+			letter-spacing: 0.035em;
+			font-size: 1.75rem ; 
+			line-height: 1em; }
+	.card
+		{ margin-bottom: 0.75em; } 
+	.header
+		{ padding: 0 0 2em 0;
+			margin-bottom: 0.75em; } 
+	.background	
+		{	height: 7.5em; } 
+	.buttons
+		{	left: 1.25em;
+			bottom: 0; } } 
